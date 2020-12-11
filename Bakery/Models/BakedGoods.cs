@@ -13,4 +13,9 @@ namespace Bakery.Models
       Quantity = quantity;
     }
   }
+
+  public class Pastry
+  {
+    
+  }
 }
