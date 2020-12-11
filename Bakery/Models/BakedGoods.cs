@@ -26,7 +26,7 @@ namespace Bakery.Models
     {
       Price = 2;
       Quantity = quantity;
-      Total = 1;
+      Total = 0;
     }
   }
 }
