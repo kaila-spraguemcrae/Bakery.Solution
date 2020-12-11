@@ -8,9 +8,9 @@ namespace Bakery.Models
 
     public Order(int breadTotal)
     {
-      BreadTotal = 4;
+      BreadTotal = breadTotal;
     }
-    
+    // private static List<Order>_instances = new List<Order> {}; 
   }
   public class Bread
   {
