@@ -33,5 +33,12 @@ namespace Bakery.Test
       Pastry newPastry = new Pastry();
       Assert.AreEqual(typeof(Pastry), newPastry.GetType());
     }
+    [TestMethod]
+    public void Pastry_CreatesInstanceOfPastryPrice_Int()
+    {
+      Pastry newPastry = new Pastry();
+      int result = newPastry.Price;
+      Assert.AreEqual(2, result);
+    }
   }
 }
