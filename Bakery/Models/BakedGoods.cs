@@ -10,7 +10,7 @@ namespace Bakery.Models
     public Order(int breadTotal, int pastryTotal)
     {
       BreadTotal = breadTotal;
-      PastryTotal = 4;
+      PastryTotal = pastryTotal;
     }
     // private static List<Order>_instances = new List<Order> {}; 
   }
