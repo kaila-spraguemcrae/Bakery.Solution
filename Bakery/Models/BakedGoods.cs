@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace Bakery.Models
 {
@@ -7,10 +8,20 @@ namespace Bakery.Models
     public int BreadTotal { get; set; }
     public int PastryTotal { get; set; }
 
+    private static List<Order> _instances = new List<Order> {}; 
+
     public Order(int breadTotal, int pastryTotal)
     {
       BreadTotal = breadTotal;
       PastryTotal = pastryTotal;
+    }
+    public static List<Order> GetAll()
+    {
+      return _instances;
+    }
+    public static void ClearAll()
+    {
+      _instances.Clear();
     }
   }
   public class Bread
