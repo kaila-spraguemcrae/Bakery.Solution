@@ -13,11 +13,19 @@ namespace Bakery.Test
       Assert.AreEqual(typeof(Bread), newBread.GetType());
     }
     [TestMethod]
-    public void Bread_CreatesInstanceOfBreadPrice_Bread()
+    public void Bread_CreatesInstanceOfBreadPrice_Int()
     {
       Bread newBread = new Bread();
       int result = newBread.Price;
       Assert.AreEqual(5, result);
+    }
+    [TestMethod]
+    public void Bread_ReturnsQuantity_Int()
+    {
+      Int quantity = 1
+      Bread newBread = new Bread(quantity);
+      int result = newBread.Quantity;
+      Assert.AreEqual(quantity, result);
     }
   }
 }
