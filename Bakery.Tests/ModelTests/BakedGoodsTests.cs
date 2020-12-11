@@ -72,5 +72,12 @@ namespace Bakery.Test
       int result = newPastry.Total;
       Assert.AreEqual(0, result);
     }
+    [TestMethod]
+    public void Pastry_CalculatePastryTotal_Int()
+    {
+      int quantity = 5;
+      Pastry newPastry = new Pastry(quantity);
+      Assert.AreEqual(9, newPastry.PastryTotal(quantity));
+    }
   }
 }

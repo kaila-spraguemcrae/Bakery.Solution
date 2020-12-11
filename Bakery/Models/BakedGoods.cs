@@ -22,8 +22,6 @@ namespace Bakery.Models
     }
   }
 
-
-
   public class Pastry
   {
     public int Price { get; set; }
@@ -35,6 +33,11 @@ namespace Bakery.Models
       Price = 2;
       Quantity = quantity;
       Total = 0;
+    }
+
+    public int PastryTotal(int quantity)
+    {
+      
     }
   }
 }
