@@ -12,7 +12,7 @@ namespace Bakery.Models
 
     public Order(int breadTotal, int pastryTotal)
     {
-      BreadTotal = 5;
+      BreadTotal = breadTotal;
       PastryTotal = pastryTotal;
       _instances.Add(this);
     }
