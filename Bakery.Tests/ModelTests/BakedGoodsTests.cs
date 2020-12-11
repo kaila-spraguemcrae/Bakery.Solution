@@ -30,7 +30,7 @@ namespace Bakery.Test
     [TestMethod]
     public void Bread_ReturnsTotal_Int()
     {
-      Bread newBread = newBread(1);
+      Bread newBread = new Bread(1);
       int result = newBread.Total;
       Assert.AreEqual(0, result);
     }
