@@ -84,7 +84,7 @@ namespace Bakery.Test
     [TestMethod]
     public void Order_CreatesInstanceOfOrder_Order()
     {
-      Order newOrder = new Order(1);
+      Order newOrder = new Order(1, 1);
       Assert.AreEqual(typeof(Order), newOrder.GetType());
     }
     [TestMethod]
@@ -94,9 +94,20 @@ namespace Bakery.Test
       Bread newBread = new Bread(quantity);
       newBread.BreadTotal(newBread.Quantity);
       int breadTotal = newBread.Total;
-      Order newOrder = new Order(breadTotal);
+      Order newOrder = new Order(breadTotal, 1);
       int result =  newOrder.BreadTotal;
       Assert.AreEqual(breadTotal, result);
+    }
+    [TestMethod]
+    public void Order_CreatesInstanceOfOrderPastryTotal_Int()
+    {
+      int quantity = 5;
+      Pastry newPastry = new Pastry(quantity);
+      newPastry.PastryTotal(newPastry.Quantity);
+      int pastryTotal = newPastry.Total;
+      Order newOrder = new Order(1, pastryTotal);
+      int result =  newOrder.PastryTotal;
+      Assert.AreEqual(pastryTotal, result);
     }
   }
 }

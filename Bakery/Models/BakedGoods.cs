@@ -5,10 +5,12 @@ namespace Bakery.Models
   public class Order
   {
     public int BreadTotal { get; set; }
+    public int PastryTotal { get; set; }
 
-    public Order(int breadTotal)
+    public Order(int breadTotal, int pastryTotal)
     {
       BreadTotal = breadTotal;
+      PastryTotal = 4;
     }
     // private static List<Order>_instances = new List<Order> {}; 
   }
