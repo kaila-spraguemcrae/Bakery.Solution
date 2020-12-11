@@ -20,7 +20,7 @@ namespace Bakery.Models
   
     public Pastry()
     {
-      Price = 1;
+      Price = 2;
     }
   }
 }
