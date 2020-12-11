@@ -37,6 +37,18 @@ This project uses the following technologies:
 | :------------- | :------------- | :------------- |
 | **Bread**|||
 | Should create an instance of Bread | Assert.AreEqual(typeof(Bread), newBread.GetType()); | true |
+| Should create an instance of Bread Price | newBread.Price | $5 |
+| Should create an instance of Bread Quantity | quantity = 5 | newBread.Quantity = 5 |
+| Should create an instance of Bread Total | newBread.Total | $0 |
+| **BreadTotal()**|||
+| Should Calculate the total of Bread | quantity = 5 | $20 |
+| **Pastry**|||
+| Should create an instance of Pastry | Assert.AreEqual(typeof(Pastry), newPastry.GetType()); | true |
+| Should create an instance of Pastry Price | newPastry.Price | $2 |
+| Should create an instance of Pastry Quantity | quantity = 5 | newPastry.Quantity = 5 |
+| Should create an instance of Pastry Total | newPastry.Total | $0 |
+| **PastryTotal()**|||
+| Should Calculate the total of Pastry| quantity = 5 | $20 |
 
 
 </details>
