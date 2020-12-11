@@ -12,8 +12,9 @@ namespace Bakery.Models
 
     public Order(int breadTotal, int pastryTotal)
     {
-      BreadTotal = breadTotal;
+      BreadTotal = 5;
       PastryTotal = pastryTotal;
+      _instances.Add(this);
     }
     public static List<Order> GetAll()
     {
