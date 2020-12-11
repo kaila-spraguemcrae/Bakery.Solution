@@ -2,6 +2,9 @@ using System;
 
 namespace Bakery.Models
 {
+  public class Order
+  {
+  }
   public class Bread
   {
     public int Price { get; set; }
