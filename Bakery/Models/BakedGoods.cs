@@ -12,7 +12,6 @@ namespace Bakery.Models
       BreadTotal = breadTotal;
       PastryTotal = pastryTotal;
     }
-    // private static List<Order>_instances = new List<Order> {}; 
   }
   public class Bread
   {
