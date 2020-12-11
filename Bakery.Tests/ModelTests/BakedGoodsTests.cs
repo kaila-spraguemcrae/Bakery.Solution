@@ -84,8 +84,19 @@ namespace Bakery.Test
     [TestMethod]
     public void Order_CreatesInstanceOfOrder_Order()
     {
-      Order newOrder = new Order();
+      Order newOrder = new Order(1);
       Assert.AreEqual(typeof(Order), newOrder.GetType());
+    }
+    [TestMethod]
+    public void Order_CreatesInstanceOfOrderBreadTotal_Int()
+    {
+      int quantity = 5;
+      Bread newBread = new Bread(quantity);
+      newBread.BreadTotal(newBread.Quantity);
+      int breadTotal = newBread.Total;
+      Order newOrder = new Order(breadTotal);
+      int result =  newOrder.BreadTotal;
+      Assert.AreEqual(breadTotal, result);
     }
   }
 }

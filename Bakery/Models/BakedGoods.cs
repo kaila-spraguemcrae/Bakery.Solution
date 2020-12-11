@@ -4,6 +4,13 @@ namespace Bakery.Models
 {
   public class Order
   {
+    public int BreadTotal { get; set; }
+
+    public Order(int breadTotal)
+    {
+      BreadTotal = 4;
+    }
+    
   }
   public class Bread
   {
