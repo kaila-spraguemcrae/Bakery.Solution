@@ -28,7 +28,7 @@ namespace Bakery.Test
       Assert.AreEqual(quantity, result);
     }
     [TestMethod]
-    public void Bread_ReturnsTotal_Int()
+    public void Bread_CreatesInstanceOfBreadTotal_Int()
     {
       Bread newBread = new Bread(1);
       int result = newBread.Total;
@@ -55,6 +55,13 @@ namespace Bakery.Test
       Pastry newPastry = new Pastry(quantity);
       int result = newPastry.Quantity;
       Assert.AreEqual(quantity, result);
+    }
+    [TestMethod]
+    public void Pastry_CreatesInstanceOfPastryTotal_Int()
+    {
+      Pastry newPastry = new Pastry(1);
+      int result = newPastry.Total;
+      Assert.AreEqual(0, result);
     }
   }
 }
