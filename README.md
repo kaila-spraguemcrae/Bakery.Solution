@@ -49,7 +49,12 @@ This project uses the following technologies:
 | Should create an instance of Pastry Total | newPastry.Total | $0 |
 | **PastryTotal()**|||
 | Should Calculate the total of Pastry| quantity = 5 | $20 |
-
+| **Order()**|||
+| Should create an instance of Order | Assert.AreEqual(typeof(Order), newOrder.GetType()); | true |
+| Should create an instance of Order BreadTotal | Assert.AreEqual(breadTotal, result); | true |
+| Should create an instance of Order PastryTotal | Assert.AreEqual(pastryTotal, result) | true |
+| Should return empty Order List |CollectionAssert.AreEqual(newList, result) | true |
+| Should return Order List | CollectionAssert.AreEqual(newList, result);| true |
 
 </details>
 
