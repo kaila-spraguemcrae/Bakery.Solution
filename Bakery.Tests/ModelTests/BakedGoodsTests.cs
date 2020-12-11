@@ -28,6 +28,14 @@ namespace Bakery.Test
       Assert.AreEqual(quantity, result);
     }
     [TestMethod]
+    public void Bread_ReturnsTotal_Int()
+    {
+      Bread newBread = newBread(1);
+      int result = newBread.Total;
+      Assert.AreEqual(0, result);
+    }
+
+    [TestMethod]
     public void Pastry_CreatesInstanceOfPastry_Pastry()
     {
       Pastry newPastry = new Pastry(1);
