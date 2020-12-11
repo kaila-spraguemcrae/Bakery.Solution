@@ -16,7 +16,7 @@ namespace Bakery.Test
     public void Bread_CreatesInstanceOfBreadPrice_Bread()
     {
       Bread newBread = new Bread();
-      int result = newBread.Price
+      int result = newBread.Price;
       Assert.AreEqual(5, result);
     }
   }
