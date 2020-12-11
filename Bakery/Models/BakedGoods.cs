@@ -12,7 +12,7 @@ namespace Bakery.Models
     {
       Price = 5;
       Quantity = quantity;
-      Total = 1;
+      Total = 0;
     }
   }
 
