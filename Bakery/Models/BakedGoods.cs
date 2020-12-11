@@ -8,7 +8,7 @@ namespace Bakery.Models
 
     public Bread()
     {
-      Price = 4;
+      Price = 5;
     }
   }
 }
