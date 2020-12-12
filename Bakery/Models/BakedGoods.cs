@@ -8,22 +8,21 @@ namespace Bakery.Models
     public int BreadTotal { get; set; }
     public int PastryTotal { get; set; }
 
-    private static List<Order> _instances = new List<Order> {}; 
-
     public Order(int breadTotal, int pastryTotal)
     {
       BreadTotal = breadTotal;
       PastryTotal = pastryTotal;
-      _instances.Add(this);
     }
-    public static List<Order> GetAll()
+    public Total()
     {
-      return _instances;
+      int total = Order.BreadTotal + Order.PastryTotal;
+      return total;
     }
     public static void ClearAll()
     {
       _instances.Clear();
     }
+
   }
   public class Bread
   {

@@ -116,34 +116,16 @@ namespace Bakery.Test
       Assert.AreEqual(pastryTotal, result);
     }
     [TestMethod]
-    public void GetAll_ReturnsEmptyList_OrderList()
-    {
-      List<Order> newList = new List<Order> {};
-      List<Order> result = Order.GetAll();
-      CollectionAssert.AreEqual(newList, result);
-    }
-    [TestMethod]
-    public void GetAll_ReturnsOrderList_OrderList()
     {
       int quantity = 5;
-      int quantity2 = 3;
       Bread newBread = new Bread(quantity);
       Pastry newPastry = new Pastry(quantity);
-      Bread newBread2 = new Bread(quantity2);
-      Pastry newPastry2 = new Pastry(quantity2);
       newBread.BreadTotal(newBread.Quantity);
       newPastry.PastryTotal(newPastry.Quantity);
-      newBread2.BreadTotal(newBread2.Quantity);
-      newPastry2.PastryTotal(newPastry2.Quantity);
       int breadTotal = newBread.Total;
       int pastryTotal = newPastry.Total;
-      int breadTotal2 = newBread2.Total;
-      int pastryTotal2 = newPastry2.Total;
       Order newOrder = new Order(breadTotal, pastryTotal);
-      Order newOrder2 = new Order(breadTotal2, pastryTotal2);
-      List<Order> newList = new List<Order> { newOrder, newOrder2 };
-      List<Order> result = Order.GetAll();
-      CollectionAssert.AreEqual(newList, result);
+      int result = newOrder.Total();
     }
   }
 }
