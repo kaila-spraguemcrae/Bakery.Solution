@@ -1,17 +1,12 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
-using System;
 using Bakery.Models;
 
 namespace Bakery.Test
 {
   [TestClass]
-  public class BakeryTests : IDisposable
+  public class BakeryTests 
   {
-    public void Dispose()
-    {
-      Order.ClearAll();
-    }
     [TestMethod]
     public void Bread_CreatesInstanceOfBread_Bread()
     {
@@ -116,6 +111,7 @@ namespace Bakery.Test
       Assert.AreEqual(pastryTotal, result);
     }
     [TestMethod]
+    public void Order_CalcultesOrderTotal_Int()
     {
       int quantity = 5;
       Bread newBread = new Bread(quantity);
@@ -125,7 +121,8 @@ namespace Bakery.Test
       int breadTotal = newBread.Total;
       int pastryTotal = newPastry.Total;
       Order newOrder = new Order(breadTotal, pastryTotal);
-      int result = newOrder.Total();
+      int result = newOrder.Total(newOrder.BreadTotal, newOrder.PastryTotal);
+      Assert.AreEqual(29, result);
     }
   }
 }

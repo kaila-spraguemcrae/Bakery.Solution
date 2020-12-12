@@ -13,14 +13,10 @@ namespace Bakery.Models
       BreadTotal = breadTotal;
       PastryTotal = pastryTotal;
     }
-    public Total()
+    public int Total(int num1,int num2)
     {
-      int total = Order.BreadTotal + Order.PastryTotal;
+      int total = num1 + num2;
       return total;
-    }
-    public static void ClearAll()
-    {
-      _instances.Clear();
     }
 
   }
