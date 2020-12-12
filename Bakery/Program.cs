@@ -29,9 +29,9 @@ namespace Bakery
         Console.WriteLine("How many loaves of bread would you like?");
         Console.WriteLine("Please enter a quantity:");
         int breadQuantity = int.Parse(Console.ReadLine());
+        Bread newBread = new Bread(breadQuantity);
         if (breadQuantity >= 0)
         {
-          Bread newBread = new Bread(breadQuantity);
           newBread.BreadTotal(breadQuantity);
         }
         else
@@ -53,9 +53,9 @@ namespace Bakery
         Console.WriteLine("How many pastries would you like?");
         Console.WriteLine("Please enter a quantity:");
         int pastryQuantity = int.Parse(Console.ReadLine());
+        Pastry newPastry = new Pastry(pastryQuantity);
         if (pastryQuantity >= 0)
         {
-          Pastry newPastry = new Pastry(pastryQuantity);
           newPastry.PastryTotal(pastryQuantity);
         }
         else
@@ -73,15 +73,17 @@ namespace Bakery
             Console.WriteLine("Thank you!");
           }
         }
+        newBread.BreadTotal(breadQuantity);
+        newPastry.PastryTotal(pastryQuantity);
         Console.WriteLine("---------------------");
         Console.WriteLine("The total price for " + newBread.Quantity + " loaf/loaves is $" + newBread.Total + ".00");
-        Console.WriteLine("The total price for " + newPastry.Quantity + " pastry/pastries is $" + newPastryTotal + ".00");
+        Console.WriteLine("The total price for " + newPastry.Quantity + " pastry/pastries is $" + newPastry.Total + ".00");
         Console.WriteLine("---------------------");
         Console.WriteLine("Is this correct? (Yes/No)");
         string response2 = Console.ReadLine().ToUpper();
         if (response2 == "YES")
         {
-          Order newOrder = new Order(Bread.Total, Pastry.Total);
+          Order newOrder = new Order(newBread.Total, newPastry.Total);
           Console.WriteLine("Your total price for this order is: $" + newOrder.Total(newOrder.BreadTotal, newOrder.PastryTotal));
           Console.WriteLine("Thank you for Ordering with Pierre's Bakery!");
         } 

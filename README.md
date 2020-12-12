@@ -92,6 +92,8 @@ Go to my GitHub repository here, [https://guthub.com/kaila.spraguemcrae/bakery](
 
 ## 🐛 Known Bugs
 
+12.11.2020 : Problem with scope in Program.cs
+
 --------------------------
 
 ## 📫 Support and contact details
