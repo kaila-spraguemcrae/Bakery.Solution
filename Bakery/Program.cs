@@ -20,25 +20,113 @@ namespace Bakery
       Console.WriteLine("~Pastry Sale~");
       Console.WriteLine("Get three pastries for $5.00");
       Console.WriteLine("---------------------");
-      Console.WriteLine("WHAT WOULD YOU LIKE TO DO?");
-      Console.WriteLine("Add to order or view order (Add/View):");
+      Console.WriteLine("WOULD YOU LIKE TO CREATE A NEW ORDER? (Yes/No):");
 
       string response1 = Console.ReadLine().ToUpper();
-      if (response1 == "ADD")
+      if (response1 == "YES")
       {
+        Console.WriteLine("---------------------");
+        Console.WriteLine("How many loaves of bread would you like?");
+        Console.WriteLine("Please enter a quantity:");
+        int breadQuantity = int.Parse(Console.ReadLine());
+        if (breadQuantity >= 0)
+        {
+          Bread newBread = new Bread(breadQuantity);
+          newBread.BreadTotal(breadQuantity);
+        }
+        else
+        {
+          Console.WriteLine("-----------------------------");
+          Console.WriteLine("There was a problem...Please check your response and try again...");
+          Console.WriteLine("Would you like to try again? (Yes/No):");
+          string restart = Console.ReadLine().ToUpper();
+          if(restart == "YES")
+          {
+            Program.Main();
+          }
+          else
+          {
+            Console.WriteLine("Thank you!");
+          }
+        }
+        Console.WriteLine("---------------------");
+        Console.WriteLine("How many pastries would you like?");
+        Console.WriteLine("Please enter a quantity:");
+        int pastryQuantity = int.Parse(Console.ReadLine());
+        if (pastryQuantity >= 0)
+        {
+          Pastry newPastry = new Pastry(pastryQuantity);
+          newPastry.PastryTotal(pastryQuantity);
+        }
+        else
+        {
+          Console.WriteLine("-----------------------------");
+          Console.WriteLine("There was a problem...Please check your response and try again...");
+          Console.WriteLine("Would you like to try again? (Yes/No):");
+          string restart = Console.ReadLine().ToUpper();
+          if(restart == "YES")
+          {
+            Program.Main();
+          }
+          else
+          {
+            Console.WriteLine("Thank you!");
+          }
+        }
+        Console.WriteLine("---------------------");
+        Console.WriteLine("The total price for " + newBread.Quantity + " loaf/loaves is $" + newBread.Total + ".00");
+        Console.WriteLine("The total price for " + newPastry.Quantity + " pastry/pastries is $" + newPastryTotal + ".00");
+        Console.WriteLine("---------------------");
+        Console.WriteLine("Is this correct? (Yes/No)");
+        string response2 = Console.ReadLine().ToUpper();
+        if (response2 == "YES")
+        {
+          Order newOrder = new Order(Bread.Total, Pastry.Total);
+          Console.WriteLine("Your total price for this order is: $" + newOrder.Total(newOrder.BreadTotal, newOrder.PastryTotal));
+          Console.WriteLine("Thank you for Ordering with Pierre's Bakery!");
+        } 
+        else if (response2 == "NO")
+        {
+          Console.WriteLine("Would you like to try again? (Yes/No):");
+          string restart = Console.ReadLine().ToUpper();
+          if(restart == "YES")
+          {
+            Program.Main();
+          }
+          else
+          {
+            Console.WriteLine("Thank you!");
+          }
+        }
+        else
+        {
+          Console.WriteLine("-----------------------------");
+          Console.WriteLine("There was a problem...Please check your response and try again...");
+          Console.WriteLine("Would you like to try again? (Yes/No):");
+          string restart = Console.ReadLine().ToUpper();
+          if(restart == "YES")
+          {
+            Program.Main();
+          }
+          else
+          {
+            Console.WriteLine("Thank you!");
+          }
+        }
 
-      } 
-      else if (response1 == "VIEW")
+      }
+      else if (response1 == "NO")
       {
-
+        Console.WriteLine("---------------------");
+        Console.WriteLine("Thank you!");
       }
       else
       {
         Console.WriteLine("-----------------------------");
         Console.WriteLine("There was a problem...Please check your response and try again...");
         Console.WriteLine("Would you like to try again? (Yes/No):");
-        string restart = Console.ReadLine().ToLower();
-        if(restart == "yes")
+        string restart = Console.ReadLine().ToUpper();
+        if(restart == "YES")
         {
           Program.Main();
         }
@@ -50,40 +138,3 @@ namespace Bakery
     }
   }
 }
-
-      // {
-      //   Console.WriteLine("-----------------------------");
-      //   Console.WriteLine("SALE: Buy two loaves of bread get one free. A single loaf costs $5");
-      //   Console.WriteLine("How many loaves of bread would you like to order?");
-      //   Console.WriteLine("Please enter a quantity:");
-      //   int breadQuantity = int.Parse(Console.ReadLine());
-
-      //   if (breadQuantity >= 0)
-      //   {
-      //     Bread newBread = new Bread(breadQuantity);
-      //     newBread.BreadTotal(breadQuantity);
-      //     Console.WriteLine("Your order of " + newBread.Quantity + " loaves of bread has been added to your order");
-      //     Console.WriteLine("The total price for " + newBread.Quantity + " loaves is $" + newBread.Total + ".00");
-      //   }
-      //   else
-      //   {
-      //     Console.WriteLine("-----------------------------");
-      //     Console.WriteLine("There was a problem...Please check your response and try again...");
-      //     Console.WriteLine("Would you like to start over? (Yes/No):");
-      //     string restart = Console.ReadLine().ToLower();
-
-      //     if(restart == "yes")
-      //     {
-      //       Program.Main();
-      //     }
-      //     else
-      //     {
-      //       Console.WriteLine("Thank you!");
-      //     }
-      //   } 
-      // }
-      // else if (response1 == "pastry")
-      // {
-      //   Console.WriteLine("-----------------------------");
-      //   Console.WriteLine("SALE: Buy one pastry for $2 or get three for $5");
-      // }
