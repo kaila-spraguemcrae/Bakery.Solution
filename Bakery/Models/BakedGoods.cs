@@ -13,13 +13,13 @@ namespace Bakery.Models
       BreadTotal = breadTotal;
       PastryTotal = pastryTotal;
     }
-    public int Total(int num1,int num2)
+    public int Total(int num1, int num2)
     {
+      num1 = 1;
       int total = num1 + num2;
       return total;
     }
-
-  }
+    }
   public class Bread
   {
     public int Price { get; set; }
