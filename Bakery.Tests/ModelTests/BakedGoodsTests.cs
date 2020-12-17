@@ -35,14 +35,14 @@ namespace Bakery.Test
       Assert.AreEqual(0, result);
     }
     [TestMethod]
-    public void BreadTotal_CalculateTotalOfOneWithOutDiscount_Int()
+    public void BreadTotal_CalculateBreadTotalOfOneWithOutDiscount_Int()
     {
       int quantity = 1;
       Bread newBread = new Bread(quantity);
       Assert.AreEqual(5, newBread.BreadTotal(quantity));
     }
     [TestMethod]
-    public void BreadTotal_CalculateTotal_Int()
+    public void BreadTotal_CalculateBreadTotalOfFiveWithDiscount_Int()
     {
       int quantity = 5;
       Bread newBread = new Bread(quantity);
@@ -80,7 +80,14 @@ namespace Bakery.Test
       Assert.AreEqual(0, result);
     }
     [TestMethod]
-    public void Pastry_CalculatePastryTotal_Int()
+    public void PastryTotal_CalculatePastryTotalOfOneWithOutDiscount_Int()
+    {
+      int quantity = 1;
+      Pastry newPastry = new Pastry(quantity);
+      Assert.AreEqual(3, newPastry.PastryTotal(quantity));
+    }
+    [TestMethod]
+    public void PastryTotal_CalculatePastryTotalOfFiveWithDiscount_Int()
     {
       int quantity = 5;
       Pastry newPastry = new Pastry(quantity);
