@@ -1,5 +1,4 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Collections.Generic;
 using Bakery.Models;
 
 namespace Bakery.Test
@@ -34,6 +33,13 @@ namespace Bakery.Test
       Bread newBread = new Bread(1);
       int result = newBread.Total;
       Assert.AreEqual(0, result);
+    }
+    [TestMethod]
+    public void BreadTotal_CalculateTotalOfOneWithOutDiscount_Int()
+    {
+      int quantity = 1;
+      Bread newBread = new Bread(quantity);
+      Assert.AreEqual(4, newBread.BreadTotal(quantity));
     }
     [TestMethod]
     public void BreadTotal_CalculateTotal_Int()
