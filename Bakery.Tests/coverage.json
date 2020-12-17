@@ -1,0 +1,430 @@
+{
+  "Bakery.dll": {
+    "/Users/kailasprague/Desktop/Bakery.Solution/Bakery/Program.cs": {
+      "Bakery.Program": {
+        "System.Void Bakery.Program::Main()": {
+          "Lines": {
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "48": 0,
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0,
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "56": 0,
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "60": 0,
+            "62": 0,
+            "63": 0,
+            "64": 0,
+            "65": 0,
+            "66": 0,
+            "67": 0,
+            "68": 0,
+            "69": 0,
+            "70": 0,
+            "72": 0,
+            "73": 0,
+            "74": 0,
+            "75": 0,
+            "76": 0,
+            "77": 0,
+            "78": 0,
+            "79": 0,
+            "80": 0,
+            "81": 0,
+            "82": 0,
+            "83": 0,
+            "84": 0,
+            "85": 0,
+            "86": 0,
+            "87": 0,
+            "88": 0,
+            "89": 0,
+            "90": 0,
+            "91": 0,
+            "92": 0,
+            "93": 0,
+            "94": 0,
+            "95": 0,
+            "96": 0,
+            "97": 0,
+            "99": 0,
+            "100": 0,
+            "101": 0,
+            "102": 0,
+            "104": 0,
+            "105": 0,
+            "106": 0,
+            "107": 0,
+            "108": 0,
+            "109": 0,
+            "110": 0,
+            "111": 0,
+            "112": 0,
+            "114": 0,
+            "115": 0,
+            "116": 0,
+            "117": 0,
+            "119": 0,
+            "120": 0,
+            "121": 0,
+            "122": 0,
+            "123": 0,
+            "124": 0,
+            "126": 0,
+            "127": 0,
+            "128": 0,
+            "129": 0,
+            "130": 0,
+            "131": 0,
+            "132": 0,
+            "133": 0,
+            "134": 0,
+            "136": 0,
+            "137": 0,
+            "138": 0,
+            "139": 0,
+            "140": 0
+          },
+          "Branches": [
+            {
+              "Line": 26,
+              "Offset": 179,
+              "EndOffset": 184,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 33,
+              "Offset": 247,
+              "EndOffset": 249,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 33,
+              "Offset": 247,
+              "EndOffset": 261,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 43,
+              "Offset": 323,
+              "EndOffset": 325,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 43,
+              "Offset": 323,
+              "EndOffset": 335,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 57,
+              "Offset": 415,
+              "EndOffset": 417,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 57,
+              "Offset": 415,
+              "EndOffset": 431,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            },
+            {
+              "Line": 67,
+              "Offset": 493,
+              "EndOffset": 495,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 0
+            },
+            {
+              "Line": 67,
+              "Offset": 493,
+              "EndOffset": 505,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 0
+            },
+            {
+              "Line": 84,
+              "Offset": 738,
+              "EndOffset": 740,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 0
+            },
+            {
+              "Line": 84,
+              "Offset": 738,
+              "EndOffset": 820,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 0
+            },
+            {
+              "Line": 90,
+              "Offset": 836,
+              "EndOffset": 838,
+              "Path": 0,
+              "Ordinal": 12,
+              "Hits": 0
+            },
+            {
+              "Line": 94,
+              "Offset": 878,
+              "EndOffset": 880,
+              "Path": 0,
+              "Ordinal": 14,
+              "Hits": 0
+            },
+            {
+              "Line": 94,
+              "Offset": 878,
+              "EndOffset": 890,
+              "Path": 1,
+              "Ordinal": 15,
+              "Hits": 0
+            },
+            {
+              "Line": 90,
+              "Offset": 836,
+              "EndOffset": 906,
+              "Path": 1,
+              "Ordinal": 13,
+              "Hits": 0
+            },
+            {
+              "Line": 109,
+              "Offset": 968,
+              "EndOffset": 970,
+              "Path": 0,
+              "Ordinal": 16,
+              "Hits": 0
+            },
+            {
+              "Line": 109,
+              "Offset": 968,
+              "EndOffset": 980,
+              "Path": 1,
+              "Ordinal": 17,
+              "Hits": 0
+            },
+            {
+              "Line": 26,
+              "Offset": 179,
+              "EndOffset": 1000,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 120,
+              "Offset": 1015,
+              "EndOffset": 1017,
+              "Path": 0,
+              "Ordinal": 18,
+              "Hits": 0
+            },
+            {
+              "Line": 120,
+              "Offset": 1015,
+              "EndOffset": 1043,
+              "Path": 1,
+              "Ordinal": 19,
+              "Hits": 0
+            },
+            {
+              "Line": 131,
+              "Offset": 1105,
+              "EndOffset": 1107,
+              "Path": 0,
+              "Ordinal": 20,
+              "Hits": 0
+            },
+            {
+              "Line": 131,
+              "Offset": 1105,
+              "EndOffset": 1117,
+              "Path": 1,
+              "Ordinal": 21,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "/Users/kailasprague/Desktop/Bakery.Solution/Bakery/Models/Bread.cs": {
+      "Bakery.Models.Bread": {
+        "System.Int32 Bakery.Models.Bread::get_Price()": {
+          "Lines": {
+            "5": 9
+          },
+          "Branches": []
+        },
+        "System.Int32 Bakery.Models.Bread::get_Quantity()": {
+          "Lines": {
+            "6": 11
+          },
+          "Branches": []
+        },
+        "System.Int32 Bakery.Models.Bread::get_Total()": {
+          "Lines": {
+            "7": 19
+          },
+          "Branches": []
+        },
+        "System.Int32 Bakery.Models.Bread::BreadTotal(System.Int32)": {
+          "Lines": {
+            "17": 4,
+            "18": 4,
+            "19": 4,
+            "20": 4
+          },
+          "Branches": []
+        },
+        "System.Void Bakery.Models.Bread::.ctor(System.Int32)": {
+          "Lines": {
+            "9": 8,
+            "10": 8,
+            "11": 8,
+            "12": 8,
+            "13": 8,
+            "14": 8
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/Users/kailasprague/Desktop/Bakery.Solution/Bakery/Models/Order.cs": {
+      "Bakery.Models.Order": {
+        "System.Int32 Bakery.Models.Order::get_BreadTotal()": {
+          "Lines": {
+            "5": 6
+          },
+          "Branches": []
+        },
+        "System.Int32 Bakery.Models.Order::get_PastryTotal()": {
+          "Lines": {
+            "6": 6
+          },
+          "Branches": []
+        },
+        "System.Int32 Bakery.Models.Order::Total(System.Int32,System.Int32)": {
+          "Lines": {
+            "14": 1,
+            "15": 1,
+            "16": 1,
+            "17": 1
+          },
+          "Branches": []
+        },
+        "System.Void Bakery.Models.Order::.ctor(System.Int32,System.Int32)": {
+          "Lines": {
+            "8": 4,
+            "9": 4,
+            "10": 4,
+            "11": 4,
+            "12": 4
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/Users/kailasprague/Desktop/Bakery.Solution/Bakery/Models/Pastry.cs": {
+      "Bakery.Models.Pastry": {
+        "System.Int32 Bakery.Models.Pastry::get_Price()": {
+          "Lines": {
+            "5": 9
+          },
+          "Branches": []
+        },
+        "System.Int32 Bakery.Models.Pastry::get_Quantity()": {
+          "Lines": {
+            "6": 11
+          },
+          "Branches": []
+        },
+        "System.Int32 Bakery.Models.Pastry::get_Total()": {
+          "Lines": {
+            "7": 19
+          },
+          "Branches": []
+        },
+        "System.Int32 Bakery.Models.Pastry::PastryTotal(System.Int32)": {
+          "Lines": {
+            "16": 4,
+            "17": 4,
+            "18": 4,
+            "19": 4
+          },
+          "Branches": []
+        },
+        "System.Void Bakery.Models.Pastry::.ctor(System.Int32)": {
+          "Lines": {
+            "9": 8,
+            "10": 8,
+            "11": 8,
+            "12": 8,
+            "13": 8,
+            "14": 8
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}

@@ -84,7 +84,7 @@ namespace Bakery
         if (response2 == "YES")
         {
           Order newOrder = new Order(newBread.Total, newPastry.Total);
-          Console.WriteLine("Your total price for this order is: $" + newOrder.Total(newOrder.BreadTotal, newOrder.PastryTotal));
+          Console.WriteLine("Your total price for this order is: (Bread) $" + newBread.Total + ".00 + " + "(Pastry) $" + newPastry.Total + ".00 = " + "Total: $" + newOrder.Total(newOrder.BreadTotal, newOrder.PastryTotal));
           Console.WriteLine("Thank you for Ordering with Pierre's Bakery!");
         } 
         else if (response2 == "NO")
