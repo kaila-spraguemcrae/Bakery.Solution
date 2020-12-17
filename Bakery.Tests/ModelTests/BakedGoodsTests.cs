@@ -39,7 +39,7 @@ namespace Bakery.Test
     {
       int quantity = 1;
       Bread newBread = new Bread(quantity);
-      Assert.AreEqual(4, newBread.BreadTotal(quantity));
+      Assert.AreEqual(5, newBread.BreadTotal(quantity));
     }
     [TestMethod]
     public void BreadTotal_CalculateTotal_Int()
